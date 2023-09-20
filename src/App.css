@@ -1,0 +1,79 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border-image-width: auto;
+
+}
+
+.gridContainer div {
+    background-color: lightblue;
+    height: 400px;
+}
+
+.gridContainer img {
+    height: 150px;
+}
+
+.ItemContainer {
+    display: flex;
+}
+
+.Grid2Container {
+    display: inline-grid;
+    grid-template-columns: 350px 350px 350px;
+
+}
+
+.Grid2Container img {
+    height: 220px;
+    width: 220px;
+}
+
+.description {}
+
+.button {
+    height: 30px;
+    width: 80px;
+    margin-left: 15px;
+    border-radius: 600px;
+    background-color: #F6AE2D
+}
+
+.head {
+    background-color: darkgrey;
+}
+
+.body {
+    background-color: #c0c0c0ea;
+}
+
+.html {
+    background-color: #1b1919dc;
+}
+
+.cartImg {
+    height: 220px;
+    width: 220px;
+}
+
+.HeaderContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #13121271;
+}
+
+.HeaderContainer div {
+    padding: 15px;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    color: rgb(255, 255, 255);
+}
+
+.HeaderContainer div:hover {
+    text-decoration: underline;
+    border: 2px solid #e7e7e7;
+
+}

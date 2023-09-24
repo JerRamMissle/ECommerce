@@ -15,7 +15,8 @@ export default function Cart({ updateCart }) {
         <div>
           <h1 >Cart</h1>
           {updateCart?.map((e, i) => {
-            let currentVal = parseFloat(updateCart[i].price.trim())
+            let unsliced = updateCart[i].price.trim().slice(1)
+            let currentVal = parseFloat(unsliced)
             if (updateCart[i]?.page) {
               console.log("val: " + currentVal)
 
@@ -29,10 +30,19 @@ export default function Cart({ updateCart }) {
               total += currentVal
             }
 
+            return (
+              <div className="Grid2Container" key={updateCart[i].image + i}>
+                <img className="cartImg" src={updateCart[i].image}></img>
 
-            return (<div key={updateCart[i].img + i}><img className="cartImg" src={updateCart[i].img}></img>
-              <p>{updateCart[i].description}</p><h3>Price: ${updateCart[i].price}</h3></div>)
+                <p>{updateCart[i].description}</p><h3>Price: {updateCart[i].price}</h3>
+
+
+              </div>)
+
+
+
           })}
+
           <h3> Total Price = ${total + deals}</h3>
         </div>
         :
@@ -40,6 +50,7 @@ export default function Cart({ updateCart }) {
       }
 
       <button className="button" onClick={togCheckout}>Checkout</button>
+
     </>
   )
 

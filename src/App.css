@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     border-image-width: auto;
-
+    columns: red;
 }
 
 .gridContainer div {
@@ -75,5 +75,15 @@
 .HeaderContainer div:hover {
     text-decoration: underline;
     border: 2px solid #e7e7e7;
+
+}
+
+.Grid2Container :nth-child(3n) {
+    padding-left: 65px;
+}
+
+.img {
+    height: 220px;
+    width: 220px;
 
 }

@@ -9,6 +9,7 @@ import PickUpLeftOff from "./pages/PickUpLeftOff";
 import Explore from "./pages/Explore";
 import JustForYou from "./pages/JustForYou";
 import TopDeals from "./pages/TopDeals";
+import MainProducts from "./pages/MainProducts";
 import { useState } from "react";
 
 
@@ -63,6 +64,9 @@ function App() {
         <div onClick={() => navigateTo("/TopDeals")}>
           <h2>Top Deals</h2>
         </div>
+        <div onClick={() => navigateTo("/MainProducts")}>
+          <h2>Main Products</h2>
+        </div>
       </div>
       <button className="button" onClick={() => navigateToCart("cart")}> Cart:{cart.length} </button>
       <br />
@@ -73,6 +77,7 @@ function App() {
         <Route path="user" element={<User />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="/MainProducts" element={<MainProducts />} />
         <Route path="cart" element={<Cart updateCart={cart} />} />
         <Route path="PickUpLeftOff" element={<PickUpLeftOff updateCart={addToCart} />} />
         <Route path="Explore" element={<Explore updateCart={addToCart} />} />

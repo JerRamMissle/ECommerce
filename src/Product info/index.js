@@ -4,7 +4,7 @@ const productsArray = [
         title: "Bible",
         price: "$14.88",
         description: "This is the HOLIEST of all bibles, buy now, plz I need rent money, NOW!!",
-        category: "explore",
+        category: "Explore",
         image: "https://cdn.discordapp.com/attachments/1029090896274268191/1154546566527455313/bible.jpeg"
     },
     {
@@ -12,7 +12,7 @@ const productsArray = [
         title: "Gigachad",
         price: "$8.89",
         description: "Chad Wellington was an understatment, this IS the CHAD of ALL Chads. ",
-        category: "explore",
+        category: "Explore",
         image: "https://cdn.discordapp.com/attachments/1029090896274268191/1154550559693602816/gigachad.jpeg"
     },
     {
@@ -20,7 +20,7 @@ const productsArray = [
         title: "Pulp Fiction",
         price: "$13.99",
         description: "DO THEY SPEAK ENGLISH IN WHAT!?!?!?",
-        category: "explore",
+        category: "Explore",
         image: "https://tse2.mm.bing.net/th?id=OIP.xkD3SJsc7E1tO2uarQWZeQHaHa&pid=Api&P=0&h=220"
     },
     {
@@ -28,7 +28,7 @@ const productsArray = [
         title: "American Psycho",
         price: "$8.99",
         description: "...there is an idea of a Patrick Bateman, some kind of abstraction, but there is no real me, only an entity, something illusory, and though I can hide my cold gaze and you can shake my hand and feel flesh gripping yours and maybe you can even sense our lifestyles are probably comparable: I simply am not there.",
-        category: "explore",
+        category: "Explore",
         image: "https://tse4.mm.bing.net/th?id=OIP.nQJfVmy09AsSW6P8rQy-iwHaFi&pid=Api&P=0&h=220"
     },
     {
@@ -36,7 +36,7 @@ const productsArray = [
         title: "Dr. Squatch Pinetar Soap",
         price: "$6.99",
         description: "Made with real pine extract, this all-star bar is as tough as a freshly cut bat. A true MVP of the shower, this heavy-hitter knocks out grime with its gritty composition and ultra-manly, woodsy scent. Toss in the exfoliating oatmeal and the super-soothing shea butter, and you've got a bullpen of natural ingredients that will strike out any stink.",
-        category: "explore",
+        category: "Explore",
         image: "https://tse4.mm.bing.net/th?id=OIP.ZdPU7NhwZhDC2SYAfRIiGgHaE8&pid=Api&P=0&h=220"
     },
     {

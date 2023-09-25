@@ -10,7 +10,7 @@ export default function Explore({ updateCart }) {
 
     return (
         <>
-            <h1>Just For You</h1>
+            <h1>Explore</h1>
             <div>
                 <div className="Grid2Container">
                     {productsArray.map((e, i) => (

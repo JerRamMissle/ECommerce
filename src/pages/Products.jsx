@@ -11,7 +11,9 @@ import { useNavigate } from "react-router-dom";
 
 
 export default function Products() {
+
   const navigate = useNavigate()
+
 
   return (
     <div>

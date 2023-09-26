@@ -1,13 +1,13 @@
-import { productsArray } from "../Product info";
+
 import { useState, useEffect, useRef } from "react";
 
 
-export default function MainProducts({
-    allProducts
+export default function ApiProducts({
+    products, setProducts
 }) {
-    const [products, setProducts] = useState(productsArray);
-    const [filteredCategory, setFilteredCategory] = useState(productsArray);
-    const [filteredProducts, setFilteredProducts] = useState(productsArray);
+    //  const [products, setProducts] = useState(productsArray);
+    const [filteredCategory, setFilteredCategory] = useState([]);
+    const [filteredProducts, setFilteredProducts] = useState([]);
     const [filteredPrice, setFilteredPrice] = useState(filteredCategory);
     const [term, setTerm] = useState("");
     const [category, setCategory] = useState("");
@@ -16,7 +16,13 @@ export default function MainProducts({
     const [maxPrice, setMaxPrice] = useState("");
     // console.log(category);
     // console.log(filteredCategory);
-
+    useEffect(() => {
+        setFilteredCategory(products)
+        setFilteredProducts(products)
+    }, []
+    )
+    console.log(filteredCategory)
+    console.log(filteredProducts)
 
     function handleChange(val) {
         setTerm(val);
@@ -200,7 +206,7 @@ export default function MainProducts({
                             <>
                                 {
                                     filteredCategory.map((product, idx) => (
-                                        <div key={productsArray[idx].title + " " + idx} className="Grid2Container">
+                                        <div key={idx} className="Grid2Container">
                                             <h1 key={idx}>{product.title} <img className="product-photo" src={product.image} alt={product.title} /></h1>
                                             <h2> {product.description}</h2>
                                             <h2>{product.price}</h2>
@@ -210,13 +216,22 @@ export default function MainProducts({
                             </> :
                             <>
                                 {
-                                    filteredProducts.map((product, idx) => (
-                                        <div key={productsArray[idx].title + " " + idx} className="Grid2Container">
-                                            <h1 key={idx}>{product.title} <img className="product-photo" src={product.image} alt={product.title} /></h1>
-                                            <h2> {product.description}</h2>
-                                            <h2>{product.price}</h2>
-                                        </div>
-                                    ))
+                                    filteredProducts.length ?
+                                        filteredProducts.map((product, idx) => (
+                                            <div key={idx} className="Grid2Container">
+                                                <h1 key={idx}>{product.title} <img className="product-photo" src={product.image} alt={product.title} /></h1>
+                                                <h2> {product.description}</h2>
+                                                <h2>{product.price}</h2>
+                                            </div>
+                                        )) :
+
+                                        products.map((product, idx) => (
+                                            <div key={idx} className="Grid2Container">
+                                                <h1 key={idx}>{product.title} <img className="product-photo" src={product.image} alt={product.title} /></h1>
+                                                <h2> {product.description}</h2>
+                                                <h2>{product.price}</h2>
+                                            </div>
+                                        ))
                                 }
                             </>
                     }
@@ -228,3 +243,5 @@ export default function MainProducts({
         </>
     )
 }
+
+

@@ -1,6 +1,6 @@
 import { Routes, Route, useNavigate, BrowserRouter } from "react-router-dom"
 import Products from "./pages/Products";
-import User from "./pages/User";
+import UserName from "../Components/UserName";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Cart from "./pages/Cart";
@@ -47,9 +47,14 @@ function App() {
   }
   return (
     <div>
-      <div className="HeaderContainer">
 
-        <div onClick={() => navigateTo("/")}>
+
+
+      <div className="HeaderContainer">
+        <div className="UserName">
+          <UserName />
+        </div>
+        <div onClick={() => navigateTo("/Login")}>
           <h2>Login</h2>
 
         </div>

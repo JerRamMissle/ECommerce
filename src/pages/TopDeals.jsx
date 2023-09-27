@@ -14,29 +14,26 @@ export default function TopDeals({ updateCart }) {
             <h1>Top Deals</h1>
 
 
+
             <div>
-                <div className="Grid2Container">
-                    {productsArray.map((e, i) => (
+
+                {productsArray.map((e, i) => {
+                    return (
                         <>
                             {
                                 productsArray[i].category === "TopDeals" &&
-                                <div>
+                                <div className="Grid2Container" key={productsArray[i] + " " + i}>
                                     < div >
                                         {productsArray[i].title}
-
+                                        <div className="img">
+                                            <img src={productsArray[i].image} />
+                                        </div>
                                     </div >
                                     < div >
-
                                         {productsArray[i].description}
                                     </div >
-                                    <div className="img">
-                                        <img src={productsArray[i].image} />
-                                    </div>
-                                    < div >
-
-                                        {productsArray[i].price}
-                                    </div >
                                     <div>
+                                        {productsArray[i].price}
                                         <button onClick={(e) => updateCart(productsArray[i])}
                                             className="button">Add to cart</button>
 
@@ -46,10 +43,14 @@ export default function TopDeals({ updateCart }) {
                         </>
                     )
 
-                    )}
 
 
-                </div >
+                }
+
+                )}
+
+
+
             </div >
         </>
     )

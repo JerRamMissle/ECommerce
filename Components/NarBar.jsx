@@ -1,33 +1,33 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { useState } from 'react';
-import Modal from "react-bootstrap/Modal";
-import Button from 'react-bootstrap/esm/Button';
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+// import { useState } from 'react';
+// import Modal from "react-bootstrap/Modal";
+// import Button from 'react-bootstrap/esm/Button';
 
-function NavBar() {
-    return (
-        <div>
+// function NavBar() {
+//     return (
+//         <div>
 
 
-            <Navbar expand="lg" className="bg-body-tertiary">
-                <Container>
-                    <Navbar.Brand href="#home">Herams Pawn Shop</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+//             <Navbar expand="lg" className="bg-body-tertiary">
+//                 <Container>
+//                     <Navbar.Brand href="#home">Herams Pawn Shop</Navbar.Brand>
+//                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
+//                     <Navbar.Collapse id="basic-navbar-nav">
+//                         <Nav className="me-auto">
 
-                            <Nav.Link href="/" >Login</Nav.Link>
-                            <Nav.Link href="/Products" >Home</Nav.Link>
-                            <Nav.Link href="/PickUpLeftOff">Pick up Where you Left off</Nav.Link>
-                            <Nav.Link href="/Explore">Explore</Nav.Link>
-                            <Nav.Link href="/JustForYou">Just For You</Nav.Link>
-                            <Nav.Link href="/TopDeals">Top Deals</Nav.Link>
-                            <Nav.Link href="/MainProducts">Main Products</Nav.Link>
-                            <Nav.Link href="Cart">Cart</Nav.Link>
-                            <Nav.Link href="ApiProducts">API Products</Nav.Link>
-                            {/* <Modal show={show} onHide={handleClose}>
+//                             <Nav.Link href="/" >Login</Nav.Link>
+//                             <Nav.Link href="/Products" >Home</Nav.Link>
+//                             <Nav.Link href="/PickUpLeftOff">Pick up Where you Left off</Nav.Link>
+//                             <Nav.Link href="/Explore">Explore</Nav.Link>
+//                             <Nav.Link href="/JustForYou">Just For You</Nav.Link>
+//                             <Nav.Link href="/TopDeals">Top Deals</Nav.Link>
+//                             <Nav.Link href="/MainProducts">Main Products</Nav.Link>
+//                             <Nav.Link href="Cart">Cart</Nav.Link>
+//                             <Nav.Link href="ApiProducts">API Products</Nav.Link>
+{/* <Modal show={show} onHide={handleClose}>
                                 <Modal.Header closeButton>
                                     <Modal.Title>Shopping Cart</Modal.Title>
                                 </Modal.Header>
@@ -54,15 +54,15 @@ function NavBar() {
                                     )}
                                 </Modal.Body>
                             </Modal> */}
-                            {/* <Button className="Grid2Container" onClick={handleShow}>
+{/* <Button className="Grid2Container" onClick={handleShow}>
                                 Cart ({productsCount}) items
                             </Button> */}
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
-    );
-}
+//                         </Nav >
+//                     </Navbar.Collapse >
+//                 </Container >
+//             </Navbar >
+//         </div >
+//     );
+// }
 
-export default NavBar;
+// export default NavBar;

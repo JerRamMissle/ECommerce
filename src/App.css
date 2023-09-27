@@ -28,11 +28,11 @@
     padding: 20px;
     border: 2px solid #212529;
     border-radius: 15px;
-
+    /* height: 320px; */
 }
 
 .Grid2Container img {
-    height: 220px;
+    height: 165px;
     width: 220px;
     flex-wrap: wrap;
     margin: 16px;
